@@ -1,0 +1,881 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+#wrapper{
+    width: 100%;
+}
+
+:root{
+    --whitegreen: #f1fcf9;
+    --lightgreen: #ddfef5;
+    --greentheme: #09BC8A;
+    --green: #08ad82;
+    --heavygreen: #058068;
+    --darkgreen: #036257;
+    --nigthgreen: #011d1a;
+}
+
+.content{
+    width: 80%;
+}
+
+.content-cabecalho{
+    width: 80%;
+    background-color: var(--lightgreen);
+    display: flex;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    position: fixed;
+    inset: 0% 0% auto;
+}
+
+/*Cabeçalho*/
+
+#cabecalho{
+    background-color: var(--lightgreen);
+}
+
+.menu-cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.menu-cabecalho-options{
+    text-decoration: none;
+    font-size: 300;
+    font-size: 14px;
+    color: black;
+    padding: 30px;
+}
+
+.menu-cabecalho-options-menu{
+    text-decoration: none;
+    font-size: 300;
+    font-size: 14px;
+    color: black;
+    padding: 30px;
+}
+
+.menu-cabecalho-options-carrinho{
+    text-decoration: none;
+    font-size: 300;
+    font-size: 14px;
+    color: black;
+    padding: 30px;
+}
+
+.menu-cabecalho-options:hover{
+    color: var(--green);
+    transition: 0.3s ease;
+}
+
+.menu-cabecalho-options-verde{
+    text-decoration: none;
+    font-size: 300;
+    font-size: 14px;
+    color: white;
+    padding: 10px 25px;
+    background-color: var(--green);
+    border-radius: 50px;
+}
+
+.menu-cabecalho-options-verde:hover{
+    color: #cecdcd;
+    transition: 0.3s ease;
+}
+
+/*Login*/
+.seta-branca{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    margin: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seta-branca:hover{
+    background-color: var(--darkgreen);
+    transition: 0.5s ease;
+    border-radius: 100px;
+}
+
+#tela-login{
+    height: 100vh;
+    background-image:  url('../assets/mountains.jpg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+}
+
+#tela-login h1{
+    font-weight: 800;
+    font-size: 32px;
+    margin: 10px;
+    text-align: center;
+}
+
+.tela-login-apresentacao{
+    display: grid;
+    color: white;
+}
+
+.fundo-login{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.fundo-login hr{
+    width: 300px;
+    color: var(--darkgreen);
+}
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 20px;
+    gap: 5px;
+}
+
+.txt-preto{
+    color: black;
+    text-align: left;
+    justify-content: left;
+    display: flex;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.esqueci-minha-senha{
+    text-decoration: none;
+    color: var(--darkgreen);
+    font-size: 13px;
+    margin: 10px;
+    text-align: center;
+}
+
+.esqueci-minha-senha:hover{
+    color: black;
+    font-weight: 500;
+    transition: 0.5s ease;
+}
+
+.formLogin h1 {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.3em;
+}
+
+.formLogin input {
+    padding: 15px;
+    font-size: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    transition: all linear 160ms;
+    outline: none;
+    width: 200px;
+}
+
+.formLogin input:focus {
+    border: 1px solid var(--darkgreen);
+}
+
+.btn {
+    background-color: var(--darkgreen);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border: none !important;
+    transition: all linear 160ms;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    background-color: var(--darkgreen);
+}
+
+.botao-grande{
+    text-decoration: none;
+    background-color: var(--greentheme);
+    padding: 20px;
+    margin: 20px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.botao-grande a{
+    text-decoration: none;
+}
+
+.botao-grande-f1{
+    font-weight: 500;
+    font-size: 13px;   
+}
+
+.botao-grande-f2{
+    text-decoration: none;
+    font-size: 13px;   
+}
+
+/*Cadastro*/
+
+#tela-cadastro{
+    height: 100%;
+    padding: 50px 0px;
+    background-image:  url('../assets/mountains.jpg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+}
+
+.txt-preto-p{
+    color: black;
+    text-align: left;
+    justify-content: left;
+    display: flex;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+.p-tela-login-apresentacao{
+    margin: 10px;
+}
+
+.linha-cadastro{
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.txt-preto-simples{
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    color: black;
+}
+
+.select-tipo-usuario{
+    margin-bottom: 10px;
+}
+
+/*Início*/
+
+.inicio{
+    height: 900px;
+    background-image:  url('../assets/paineis-solares.jpg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+}
+
+.section-1{
+    text-align: center;
+}
+
+.section-1 h3{
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+    justify-content: space-around;
+}
+
+.section-1 p{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.txt-destaque-verde{
+    color: var(--greentheme);
+}
+
+.txt-verde{
+    color: var(--green);
+}
+
+.botao-verde-padrao{
+    text-decoration: none;
+    background-color: var(--green);
+    color: white;
+    border-radius: 50px;
+    padding: 10px 50px;
+    font-size: 20px;
+}
+
+.botao-verde-padrao:hover{
+    color: var(--green);
+    background-color: black;
+    transition: 0.5s ease;
+}
+
+/*Bem-vindo - Início*/
+
+.section-2{
+    background-color: var(--greentheme);
+}
+
+.section-2 h3{
+    color: var(--nigthgreen);
+    padding: 40px 0px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.txt-destaque-section-2{
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.p-section-2{
+    font-weight: 500;
+    padding-bottom: 40px;
+}
+
+/*Consumidor e Produtor - Início*/
+
+.section-3{
+    background-color: white;
+}
+
+.content-section-3{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.coluna-section-3{
+    width: 25%;
+    padding: 70px 15px;
+    text-align: center;     
+}
+
+.linha-section-3{
+    height: 200px;
+}
+
+.coluna-section-3 p{
+    margin-top: 10px;
+    color: black;
+}
+
+.coluna-section-3 h3{
+    font-size: 30px;
+    color: var(--darkgreen);
+    margin-bottom: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.coluna-section-3 ul{
+    list-style: none;
+}
+
+.coluna-section-3 img{
+    width: 115%;
+}
+
+.coluna-section-3 ul li{
+    margin: 10px 0;
+}
+
+.titulo-section-3{
+    color: var(--darkgreen);
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.botao-verde-padraox{
+    text-decoration: none;
+    background-color: var(--green);
+    color: white;
+    border-radius: 50px;
+    padding: 10px 50px;
+    font-size: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.botao-verde-padraox:hover{
+    color: var(--green);
+    background-color: black;
+    transition: 0.5s ease;
+}
+
+/*Por que Escolher a EcoEnergy? - Início*/
+
+.section-4{
+    background-color: var(--green);
+}
+
+.section-4 h3{
+    color: var(--nigthgreen);
+    padding-top: 40px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.section-4 ul{
+    padding-bottom: 40px;
+    list-style: none;
+}
+
+.section-4 li{
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.section-4 span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.descricao-section-4{
+    margin-left: 50px;
+}
+
+.circulo{
+    background-color: white;
+    border-radius: 100%;
+    width: 170px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+}
+
+/*Finalização - Início*/
+
+.section-5{
+    background-image: url('../assets/paisagem-inicio.jpg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: right;
+    align-items: center;
+    display: grid;
+    height: 300px;
+}
+
+.section-5 p{
+    padding: 20px 0px;
+    font-weight: 500;
+}
+
+.section-5 span{
+    color: var(--green);
+    font-weight: 600;
+}
+
+/*Seja EcoEnergy*/
+
+.seja-eco-apresentacao{
+    background-color: var(--lightgreen);
+    height: 500px;
+    align-items: center;
+    display: flex;
+}
+
+.seja-eco-apresentacao h3{
+    color: black;
+    margin-top: 140px;
+    padding: 30px 0px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.seja-eco-apresentacao ul{
+    list-style: none;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.seja-eco-apresentacao li{
+    padding-bottom: 30px;
+
+}
+
+.txt-destaque-descricao{
+    font-weight: 600;
+    color: var(--darkgreen);
+    font-size: 18px;
+}
+
+.section-seja-eco{
+    background-color: var(--greentheme);
+    margin-top: 110px;
+}
+
+.section-seja-eco h3{
+    color: var(--nigthgreen);
+    padding: 40px 0px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.txt-destaque-seja-eco{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.p-seja-eco{
+    font-weight: 500;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.section-produtor{
+    background-image: url('../assets/73569-548642427_tiny.jpg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    align-items: center;
+    display: flex;
+    height: 400px;
+}
+
+.section-produtor p{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-weight: 500;
+    color: white;
+    font-size: 16px;
+}
+
+.section-produtor span{
+    color: var(--green);
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.section-consumidor{
+    background-image: url('../assets/4k-ultra-hd-landscape-wallpaper-awid1q3a5dov0lop.jpg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: right;
+    align-items: center;
+    display: grid;
+    height: 400px;
+}
+
+.section-consumidor p{
+    padding-top: 20px;
+    font-weight: 500;
+}
+
+.section-consumidor span{
+    color: var(--green);
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.botao-seja-eco{
+    text-decoration: none;
+    background-color: var(--green);
+    color: white;
+    border-radius: 50px;
+    padding: 10px 50px;
+    font-size: 20px;
+}
+
+.botao-seja-eco:hover{
+    color: var(--green);
+    background-color: black;
+    transition: 0.5s ease;
+}
+
+/*Catálogo*/
+
+.titulo-catalogo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--heavygreen);
+    padding-top: 200px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.grid-catalogo {
+    display: flex;
+
+}
+
+.item-catalogo {
+    background-color: var(--green);
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.img-catalogo{
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.divisao-catalogo {
+    padding: 15px;
+}
+
+
+.titulo-item-catalogo{
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+
+.preco{
+    color: white;
+}
+
+.botao-add-carrinho{
+    background-color: var(--darkgreen);
+    color: white;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 6px;
+    margin-top: 16px;
+}
+
+/*Sobre nós*/
+
+.integrantes-social{
+    display: grid;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    margin-top: 170px;
+}
+
+.integrantes-social p{
+    align-items: center;
+}
+
+.integrantes-social h3{
+    align-items: center;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.circle {
+    background-color: #aaa;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+  .circle img {
+    bottom: 0;
+    width: 100%;
+}
+
+.info-integrantes-social{
+    display: grid;
+}
+
+.txt-preto-social{
+    color: black;
+    text-align: left;
+    justify-content: left;
+    display: flex;
+    font-weight: 800;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.btn-sobre-nos {
+    background-color: var(--darkgreen);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border: none !important;
+    transition: all linear 160ms;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    background-color: var(--darkgreen);
+}
+
+/*Rodapé*/
+
+#rodape{
+    background-color: var(--darkgreen);
+}
+
+.content-rodape{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.coluna-rodape{
+    width: 25%;
+    padding: 50px 15px;
+}
+
+.coluna-rodape img{
+    padding: 10px 0px;
+}
+
+.coluna-rodape p{
+    margin-top: 10px;
+}
+
+.coluna-rodape h4{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.coluna-rodape ul{
+    list-style: none;
+}
+
+.coluna-rodape ul li{
+    margin: 10px 0;
+}
+
+.coluna-rodape ul li a, p{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.coluna-rodape ul li a:hover{
+    color: #cecdcd;
+}
+
+.voltar-inicio:hover{
+    color: #cecdcd;
+    transition: all 0.3s ease;
+    padding-left: 10px;
+}
+
+/*Modal*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.modal-content p{
+    color: black;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Responsividade*/
+
+@media (max-width: 769px) {
+
+    .menu-cabecalho{
+        display: none;
+    }
+
+    .menu-cabecalho-options{
+        display: none
+    }
+
+    .content-section-3{
+        display: grid;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .content-section-3 img{
+        width: 200%;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-e-carrinho{
+        display: none;
+    }
+
+    .menu-cabecalho-options-menu{
+        display: none
+    }
+}
+
+

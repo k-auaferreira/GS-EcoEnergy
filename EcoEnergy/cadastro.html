@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/icon-ecoenergy.png" type="image/x-icon">
+    <script src="script/script.js"></script>
+    <title>Cadastro - EcoEnergy</title>
+</head>
+
+<body>
+    <main id="tela-cadastro">
+        <a href="login.html"><img class="seta-branca" src="assets/arrow_back_16dp_FFFFFF_FILL0_wght400_GRAD0_opsz20.png" alt="seta-branca"></a>
+        <div class="tela-login-apresentacao">
+            <img src="assets/logo-branca-EcoEnergy.png" alt="logo-branca-EcoEnergy">
+            <h1>Cadastro</h1>
+            <p class="p-tela-login-apresentacao"><b>Realize seu cadastro e venha fazer parte </b><span class="txt-verde"><b>EcoEnergy</b></span></p>
+
+            <div class="fundo-cadastro">
+                <form method="post" class="formLogin">
+                    <label class="txt-preto" for="nomeCompleto">Nome</label>
+                    <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Digite seu nome completo" autofocus="true" required/>
+                    <label class="txt-preto" for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autofocus="true" required/>
+                    <label class="txt-preto" for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required/>
+                    <label class="txt-preto"for="conf-senha">Confirme sua senha</label>
+                    <input type="password" name="conf-senha" id="conf-senha" placeholder="Digite sua senha" required/>
+
+                    <hr class="linha-cadastro">
+
+                    <label class="txt-preto" for="rua">Endereço</label>
+                    <label class="txt-preto-p" for="rua">Rua</label>
+                    <input type="text" name="rua" id="rua" placeholder="Nome da rua" autofocus="true" required/>
+                    <label class="txt-preto-p" for="numero-local">Número</label>
+                    <input type="text" name="numero-local" id="numero-local" placeholder="Número" autofocus="true" required/>
+                    <label class="txt-preto-p" for="bairro">Bairro</label>
+                    <input type="text" name="bairro" id="bairro" placeholder="Nome do bairro" autofocus="true" required/>
+
+                    <hr class="linha-cadastro">
+
+                    <label class="txt-preto" for="tipo-usuario">Tipo</label>
+                    <select class="select-tipo-usuario" id="tipo-usuario" name="tipo-usuario" required>
+                        <option value="">Selecione...</option>
+                        <option value="consumidor">Consumidor</option>
+                        <option value="produtor">Produtor</option>
+                    </select>
+
+                    <hr class="linha-cadastro">
+
+                    <label class="txt-preto" for="cpf">Documentação</label>
+                    <input type="text" placeholder="Insira seu CPF ou CNPJ" autofocus="true" required maxlength="10">
+
+                    <input type="submit" value="Finalizar cadastro" class="botao-verde-padrao"/>
+                </form>
+                <div class="botao-grande">
+                    <a href="login.html">
+                        <p class="botao-grande-f1">Já possui uma conta?</p>
+                        <p class="botao-grande-f2">Acesse a plataforma</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
